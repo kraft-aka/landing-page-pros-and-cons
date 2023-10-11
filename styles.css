@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Darker Grotesque', 'sans-serif';
+}
+
+.container-image {
+  height: auto;
+  width: fit-content;
+}
+
+.main-title {
+  margin: 10px 0;
+  color: #1a1b1e;
+  /* Website/Tomato Grotesk/Headline 12/Bold */
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 128.571% */
+}
+
+.figure img {
+  width: 668px;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  /* line-height: 0; */
+}
+
+.figure figcaption {
+  color: #2f3033;
+  /* Website/Work Sans/Body 2/Regular */
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  background: #f2f2f2;
+  width: fit-content;
+}
+/* second part */
+.container-pros-cons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 668px;
+  height: 626px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #fd68ae;
+  background: #fff;
+}
+
+.pros-title, .cons-title {
+  color: #1a1b1e;
+  font-feature-settings: "liga" off;
+  /* Website/Tomato Grotesk/Subtitle 1/medium */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  margin-bottom: 20px;
+}
+
+.pros li, 
+.cons li {
+  color: #46474a;
+  /* Website/Work Sans/Subtitle 1/Regular */
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  margin-bottom: 15px;
+}
+
+.container-pros, 
+.container-cons {
+  width: 250px;
+  height: auto;
+  margin: 30px 40px;
+}
+
+.final-title {
+  color:  #1A1B1E;
+/* Website/Tomato Grotesk/Headline 12/Bold */
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 128.571% */
+}
+
+.verdict {
+  display: grid;
+}
+
+.verdict-item {
+  margin-left: 50px;
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-feature-settings: "case" on;
+    /* Mobile/Tomato Grotesk/Subtitle 2/Semibold */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+  }
+  .figure figcaption {
+    /* Mobile/Work Sans/Body 2/Regular */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+  .figure img {
+    width: 330px;
+    height: 212px;
+  }
+}
