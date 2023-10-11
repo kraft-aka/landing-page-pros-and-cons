@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Darker Grotesque', 'sans-serif';
+  font-family: "Darker Grotesque", "sans-serif";
 }
 
 .container-image {
@@ -56,7 +56,8 @@
   background: #fff;
 }
 
-.pros-title, .cons-title {
+.pros-title,
+.cons-title {
   color: #1a1b1e;
   font-feature-settings: "liga" off;
   /* Website/Tomato Grotesk/Subtitle 1/medium */
@@ -67,7 +68,7 @@
   margin-bottom: 20px;
 }
 
-.pros li, 
+.pros li,
 .cons li {
   color: #46474a;
   /* Website/Work Sans/Subtitle 1/Regular */
@@ -79,7 +80,7 @@
   margin-bottom: 15px;
 }
 
-.container-pros, 
+.container-pros,
 .container-cons {
   width: 250px;
   height: auto;
@@ -87,12 +88,12 @@
 }
 
 .final-title {
-  color:  #1A1B1E;
-/* Website/Tomato Grotesk/Headline 12/Bold */
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px; /* 128.571% */
+  color: #1a1b1e;
+  /* Website/Tomato Grotesk/Headline 12/Bold */
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
 }
 
 .verdict {
@@ -101,9 +102,7 @@ line-height: 36px; /* 128.571% */
 
 .verdict-item {
   margin-left: 50px;
-  
 }
-
 
 @media only screen and (max-width: 600px) {
   .title {
