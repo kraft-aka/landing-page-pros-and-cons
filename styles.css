@@ -44,6 +44,7 @@
   background: #f2f2f2;
   width: fit-content;
 }
+
 /* second part */
 .container-pros-cons {
   display: flex;
@@ -56,6 +57,10 @@
   background: #fff;
 }
 
+.container-pros-cons ul {
+  list-style: none;
+}
+
 .pros-title,
 .cons-title {
   color: #1a1b1e;
@@ -64,19 +69,32 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
+  /* 125% */
   margin-bottom: 20px;
+}
+
+.container-pros-cons .container-pros li::before,
+.container-pros-cons .container-cons li::before {
+  content: "\2022";
+  color: #377c3b;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.container-pros-cons .container-cons li::before {
+  color: #d73514;
 }
 
 .pros li,
 .cons li {
   color: #46474a;
   /* Website/Work Sans/Subtitle 1/Regular */
-  font-family: Work Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
   margin-bottom: 15px;
 }
 
@@ -89,19 +107,56 @@
 
 .final-title {
   color: #1a1b1e;
-  /* Website/Tomato Grotesk/Headline 12/Bold */
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 128.571% */
+  line-height: 36px;
+  /* 128.571% */
 }
 
-.verdict {
-  display: grid;
+.verdict-container {
+  display: flex;
+  width: 500px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .verdict-item {
-  margin-left: 50px;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.verdict-item p:first-child {
+  color: #46474a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.verdict-item p:last-child {
+  color: #46474a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.verdict-round-score {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(to right, #9c20aa, #fb3570) border-box;
+  border: 4px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -111,15 +166,19 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px; /* 125% */
+    line-height: 30px;
+    /* 125% */
   }
+
   .figure figcaption {
     /* Mobile/Work Sans/Body 2/Regular */
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px; /* 133.333% */
+    line-height: 16px;
+    /* 133.333% */
   }
+
   .figure img {
     width: 330px;
     height: 212px;
