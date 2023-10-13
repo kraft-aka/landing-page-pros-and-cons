@@ -8,6 +8,11 @@
   font-family: "Darker Grotesque", "sans-serif";
 }
 
+body {
+  width: 100wh;
+  height: 100vh;
+}
+
 .container-image {
   height: auto;
   width: fit-content;
@@ -64,7 +69,6 @@
 .pros-title,
 .cons-title {
   color: #1a1b1e;
-  font-feature-settings: "liga" off;
   /* Website/Tomato Grotesk/Subtitle 1/medium */
   font-size: 24px;
   font-style: normal;
@@ -82,6 +86,7 @@
   width: 10px;
   height: 10px;
 }
+
 .container-pros-cons .container-cons li::before {
   color: #d73514;
 }
@@ -89,20 +94,29 @@
 .pros li,
 .cons li {
   color: #46474a;
-  /* Website/Work Sans/Subtitle 1/Regular */
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  /* 144.444% */
   margin-bottom: 15px;
+}
+
+.container-both {
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .container-pros,
 .container-cons {
-  width: 250px;
+  /* width: 250px;
   height: auto;
-  margin: 30px 40px;
+  margin: 30px 40px; */
+  width: inherit;
+  height: auto;
+  margin-top: 15px;
 }
 
 .final-title {
@@ -111,16 +125,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  /* 128.571% */
+  margin: 0 auto;
 }
 
 .verdict-container {
-  display: flex;
-  width: 500px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
 }
 
 .verdict-item {
@@ -129,6 +141,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 50px;
 }
 
 .verdict-item p:first-child {
