@@ -219,12 +219,14 @@ p {
 }
 
 .gradient {
-  background: linear-gradient(270deg,
-      #ff3200 4.18%,
-      #ff3200 5.3%,
-      #ffb400 46.79%,
-      #da33d0 81.55%,
-      #006fd9 116.31%);
+  background: linear-gradient(
+    270deg,
+    #ff3200 4.18%,
+    #ff3200 5.3%,
+    #ffb400 46.79%,
+    #da33d0 81.55%,
+    #006fd9 116.31%
+  );
   border-radius: 100%;
   width: 70px;
   height: 70px;
@@ -272,122 +274,150 @@ p {
 
 @keyframes color-100 {
   from {
-    background: conic-gradient(transparent 0%,
-        transparent 0%,
-        gray 0%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 0%,
+      gray 0%,
+      gray 100%
+    );
     opacity: 0.8;
   }
 
   25% {
-    background: conic-gradient(transparent 0%,
-        transparent 25%,
-        gray 25%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 25%,
+      gray 25%,
+      gray 100%
+    );
   }
 
   50% {
-    background: conic-gradient(transparent 0%,
-        transparent 50%,
-        gray 50%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 50%,
+      gray 50%,
+      gray 100%
+    );
     opacity: 0.9;
   }
 
   75% {
-    background: conic-gradient(transparent 0%,
-        transparent 75%,
-        gray 75%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 75%,
+      gray 75%,
+      gray 100%
+    );
   }
 
   to {
-    background: conic-gradient(transparent 0%,
-        transparent 100%,
-        gray 100%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 100%,
+      gray 100%,
+      gray 100%
+    );
     opacity: 1;
   }
 }
-
 
 @keyframes color-80 {
   from {
-    background: conic-gradient(transparent 0%,
-        transparent 0%,
-        gray 0%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 0%,
+      gray 0%,
+      gray 100%
+    );
     opacity: 0.8;
   }
 
   25% {
-    background: conic-gradient(transparent 0%,
-        transparent 25%,
-        gray 25%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 25%,
+      gray 25%,
+      gray 100%
+    );
   }
 
   50% {
-    background: conic-gradient(transparent 0%,
-        transparent 50%,
-        gray 50%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 50%,
+      gray 50%,
+      gray 100%
+    );
     opacity: 0.9;
   }
 
   75% {
-    background: conic-gradient(transparent 0%,
-        transparent 75%,
-        gray 75%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 75%,
+      gray 75%,
+      gray 100%
+    );
   }
 
   to {
-    background: conic-gradient(transparent 0%,
-        transparent 80%,
-        gray 80%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 80%,
+      gray 80%,
+      gray 100%
+    );
     opacity: 1;
   }
 }
 
-
 @keyframes color-90 {
   from {
-    background: conic-gradient(transparent 0%,
-        transparent 0%,
-        gray 0%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 0%,
+      gray 0%,
+      gray 100%
+    );
     opacity: 0.8;
   }
 
   25% {
-    background: conic-gradient(transparent 0%,
-        transparent 25%,
-        gray 25%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 25%,
+      gray 25%,
+      gray 100%
+    );
   }
 
   50% {
-    background: conic-gradient(transparent 0%,
-        transparent 50%,
-        gray 50%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 50%,
+      gray 50%,
+      gray 100%
+    );
     opacity: 0.9;
   }
 
   75% {
-    background: conic-gradient(transparent 0%,
-        transparent 75%,
-        gray 75%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 75%,
+      gray 75%,
+      gray 100%
+    );
   }
 
   to {
-    background: conic-gradient(transparent 0%,
-        transparent 90%,
-        gray 90%,
-        gray 100%);
+    background: conic-gradient(
+      transparent 0%,
+      transparent 90%,
+      gray 90%,
+      gray 100%
+    );
     opacity: 1;
   }
 }
@@ -443,7 +473,8 @@ li {
   animation-fill-mode: forwards;
 }
 
-.cons-title, .pros-title {
+.cons-title,
+.pros-title {
   animation-name: font-weight-change, move-image;
   animation-duration: 10s, 2s;
   animation-delay: 1s;
